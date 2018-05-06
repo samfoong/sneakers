@@ -11,6 +11,7 @@ gem 'rails', '~> 5.1.6'
 gem 'devise'
 gem 'figaro'
 gem 'carrierwave', '~> 1.0'
+gem 'bootstrap', '~> 4.1.0'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
