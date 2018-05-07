@@ -14,6 +14,7 @@ gem 'carrierwave', '~> 1.0'
 gem 'bootstrap', '~> 4.1.0'
 gem "fog-aws"
 gem 'dotenv-rails'
+gem 'stripe'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
