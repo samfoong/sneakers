@@ -1,9 +1,9 @@
 <p id="notice"><%= notice %></p>
 <div class="row">
-  <div class="col-sm-8"><%= image_tag @product.image_url(:medium) %></div>
-  <div class="col-sm-4">
+  <div class="col-sm-7"><%= image_tag @product.image_url(:medium) %></div>
+  <div class="col-sm-5">
   <h3><%= @product.title %></h3>
-  <p><%= number_to_currency(@product.price,:unit=>'AUD') %></p>
+  <h5><%= number_to_currency(@product.price,:unit=>'AUD') %></h5>
   <p><%= @product.description %></p>
   </div>
 </div>

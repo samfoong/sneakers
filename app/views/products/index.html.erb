@@ -1,25 +1,25 @@
-<p id="notice"><%= notice %></p>
-<%= link_to('Log Out', destroy_user_session_path, method: :delete) %>
-<h1>Products</h1>
+<div class="center">
+  <p id="notice"><%= notice %></p>
+  <%= link_to('Log Out', destroy_user_session_path, method: :delete) %>
+  <h1>Products</h1>
 
-    <div class="row">
-     <% @products.each do |product| %>
-      <div class="col-md-3">
-        <%= image_tag product.image_url(:thumb) %>
-        <div class="caption">
-        <h3><%= product.title %></h3>
-        <p><%= number_to_currency(product.price,:unit=>'AUD') %></p>
-        <%= link_to 'Show', product, class:'btn btn-link' %>
-        <%= link_to 'Edit', edit_product_path(product), class:'btn btn-link' %>
-        <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-link' %>
+      <div class="row">
+      <% @products.each do |product| %>
+        <div class="col-md-3">
+          <%= image_tag product.image_url(:thumb) %>
+          <div class="caption">
+          <h3><%= product.title %></h3>
+          <p><%= number_to_currency(product.price,:unit=>'AUD') %></p>
+          <%= link_to 'Show', product, class:'btn btn-link' %>
+          <%= link_to 'Edit', edit_product_path(product), class:'btn btn-link' %>
+          <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-link' %>
+          </div>
         </div>
+      <% end %>
       </div>
+    
+  <br>
 
-      
-    <% end %>
-    </div>
-  
+  <%= link_to 'New Product', new_product_path, class:'btn btn-link' %>
 
-<br>
-
-<%= link_to 'New Product', new_product_path, class:'btn btn-link' %>
+  </div>
