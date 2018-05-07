@@ -18,23 +18,8 @@
 </p>
 
 <p>
-  <strong>Size:</strong>
-  <%= @product.size %>
-</p>
-
-<p>
-  <strong>Note:</strong>
-  <%= @product.note %>
-</p>
-
-<p>
-  <strong>Category:</strong>
-  <%= @product.category_id %>
-</p>
-
-<p>
   <strong>Images:</strong>
-  <%= image_tag @product.image.url %>
+  <%= @product.image.url %>
 </p>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
