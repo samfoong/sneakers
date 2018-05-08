@@ -12,11 +12,13 @@
 
   <body>
   <%= render 'layouts/navbar' %>
-     <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
     <div class="container">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+
     <%= yield %>
     <%= render 'layouts/footer' %>
     </div>
+    <stript src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   </body>
 </html>
