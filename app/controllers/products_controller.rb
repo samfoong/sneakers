@@ -11,7 +11,7 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     # @products = Product.all
-    @products = Product.search(params[:search])
+    @products = Product.search(params[:search]).order("created_at DESC")
   end
 
   # GET /products/1
@@ -21,7 +21,7 @@ class ProductsController < ApplicationController
 
   # GET /products/new
   def new
-    @product = Product.new.order("created_at DESC")
+    @product = Product.new
   end
 
   # GET /products/1/edit
