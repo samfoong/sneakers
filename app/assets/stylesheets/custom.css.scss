@@ -31,3 +31,13 @@ body {
         font-size: 18px;
     }
 }
+
+.jumbotron {
+    background-image: url('jumbotron1.png');
+    h1, h2 {
+        font-family: Permanent-marker,serif;
+        color: white;
+    }
+    background-size: cover;
+    
+}
