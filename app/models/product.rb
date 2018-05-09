@@ -7,4 +7,8 @@ class Product < ApplicationRecord
 
     validates_presence_of :image
 
+    def self.search(search)
+        where(["title ILIKE ? OR description ILIKE ?", "%#{search}%", "%#{search}%"]) 
+    end
+
 end

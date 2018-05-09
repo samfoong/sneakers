@@ -1,10 +1,13 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :edit, :create, :update, :destroy]
+  before_action :check_user, only: [:edit, :update, :destroy]
 
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+    # @products = Product.all
+    @products = Product.search(params[:search])
   end
 
   # GET /products/1
@@ -72,4 +75,11 @@ class ProductsController < ApplicationController
     def product_params
       params.require(:product).permit(:title, :price, :description, :user, :name, :image)
     end
+
+    def check_user
+        if current_user != @product.user
+          redirect_to root_url, alert: "Sorry, this listing belongs to someone else"
+          end
+    end
+  
 end
