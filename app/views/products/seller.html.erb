@@ -11,6 +11,8 @@
           <p><%= number_to_currency(product.price,:unit=>'AUD ') %></p>
           <p><%= "Sold by #{product.user.name}" %></p>
           <% if (user_signed_in?) && (current_user == product.user) %>
+          <%= link_to 'Edit', edit_product_path(product), class:'btn btn-link' %>
+          <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-link' %>
           <% end %>
           </div>
         </div>
@@ -25,5 +27,5 @@
   <% end %>
   <%= link_to 'New Product', new_product_path, class:'btn btn-link' %>
 
-</div>
+  </div>
   <% end %>

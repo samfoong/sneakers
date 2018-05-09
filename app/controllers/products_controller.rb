@@ -3,6 +3,10 @@ class ProductsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :edit, :create, :update, :destroy]
   before_action :check_user, only: [:edit, :update, :destroy]
 
+  def seller
+    @products = Product.where(user: current_user).order("created_at DESC")
+  end
+
   # GET /products
   # GET /products.json
   def index
@@ -17,7 +21,7 @@ class ProductsController < ApplicationController
 
   # GET /products/new
   def new
-    @product = Product.new
+    @product = Product.new.order("created_at DESC")
   end
 
   # GET /products/1/edit
