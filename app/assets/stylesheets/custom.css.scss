@@ -35,13 +35,14 @@ body {
 .jumbotron {
     background-image: url('jumbotron1.png');
     h1, h2 {
-        font-family: Permanent-marker,serif;
+        font-family: "Permanent Marker";
         color: white;
     }
     background-size: cover;
     
 }
 
-.footer {
-    background-color: #292929;
+footer {
+    background-color: #292929 !important;
+    color: white;
 }
