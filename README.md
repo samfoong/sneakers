@@ -3,7 +3,8 @@
 Completed as a major assessment in Term 2 [Coder Academy’s](https://coderacademy.edu.au/) Fast Track Bootcamp.
 
 View Live (Heroku): 
-(https//sneakerspalooza.herokuapp.com/)
+(https://sneakerspalooza.herokuapp.com/)
+
 View Github :
 (https://github.com/samfoong/sneakers)
 
