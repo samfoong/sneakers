@@ -1,8 +1,11 @@
-# Sneaker Palooza
+# Sneakers Palooza
 
-Completed as a major assessment in [Coder Academy’s](https://coderacademy.edu.au/) Fast Track Bootcamp.
+Completed as a major assessment in Term 2 [Coder Academy’s](https://coderacademy.edu.au/) Fast Track Bootcamp.
 
-View Live: https//sneakerspalooza.herokuapp.com/
+View Live (Heroku): 
+(https//sneakerspalooza.herokuapp.com/)
+View Github :
+(https://github.com/samfoong/sneakers)
 
 ## Table of Contents
 
@@ -60,7 +63,7 @@ Preliminary user stories were collected in Trello, with more detailed user stori
 
 ### Preliminary User Stories
 
-![](UserStories)
+![userstories-min](https://user-images.githubusercontent.com/29603680/39900258-e54d19d0-5503-11e8-960e-68455bb3e1c3.png)
  
 ### Detailed User Stories
 
@@ -244,7 +247,7 @@ Preliminary user stories were collected in Trello, with more detailed user stori
 
 The original workflow was conceptualised in the diagram below.
 
-![](Workflow)
+![workflow-min](https://user-images.githubusercontent.com/29603680/39900250-d23d470c-5503-11e8-955b-a5c31c410ae6.png)
 
 ---
 
@@ -256,37 +259,101 @@ Colours and fonts were chosen as below.
 
 I want minimalism on my website. Because of that i am using colours which are of black and white shades so as to showcase the main image which are the sneakers.
 
-![](coloors.pmg)
+![coloor-min](https://user-images.githubusercontent.com/29603680/39900068-bff1ad5a-5502-11e8-83e6-4a4f4f86c177.png)
 
 
 ### Fonts
-![](Font1)
-![](Font2)
+![font1-min](https://user-images.githubusercontent.com/29603680/39900090-db73a24a-5502-11e8-961b-ce9c1fc26b37.png)
+
+![font2-min](https://user-images.githubusercontent.com/29603680/39900102-e642faea-5502-11e8-9766-1d5adba94b5d.png)
+
   
-**Permanent Marker** represents the look and feel of a favourite writing instrument. I wanted to create a graffiti feel to the page as thou it is handwritten. 
+**Permanent Marker** represents the look and feel of a favourite writing instrument. I wanted to create a graffiti feel to the page as thou it is handwritten. This is used in the jumbotron.
 
 
 Popular Pairings with Permanent Marker are **Open Sans**.
-Open Sans was designed with an upright stress, open forms and a neutral, yet friendly appearance. It was optimised for print, web, and mobile interfaces, and has excellent legibility characteristics in its letterforms. 
+**Open Sans** was designed with an upright stress, open forms and a neutral, yet friendly appearance. It was optimised for print, web, and mobile interfaces, and has excellent legibility characteristics in its letterforms. This is used throughout the website.
 
 ---
 
 ## Wireframes
+Below are the conceptual images of my wireframes which i have created. I wanted to keep it minimal and clean.
+![homepage-min](https://user-images.githubusercontent.com/29603680/39900215-a5a03420-5503-11e8-81d9-7bdf5e6c7c84.png)
+![listingdesktop-min](https://user-images.githubusercontent.com/29603680/39900219-ab995aa0-5503-11e8-8496-bcb6d113ad5f.png)
+![listingmobile-min](https://user-images.githubusercontent.com/29603680/39900224-af8d4e78-5503-11e8-9247-9894468abc64.png)
+![aboutus-min](https://user-images.githubusercontent.com/29603680/39900189-6ffb0656-5503-11e8-84db-6df8085adb62.png)
+![desktop signup-min](https://user-images.githubusercontent.com/29603680/39900205-8d645b20-5503-11e8-8900-a37c1144953d.png)
+![faq-min](https://user-images.githubusercontent.com/29603680/39900209-9c8a1900-5503-11e8-89f2-b2f36fe7bf95.png)
 
 
 ---
 
 ## ERD
+This is the conceptual image of the ERD
+![erd-min](https://user-images.githubusercontent.com/29603680/39900124-0a4f1e1e-5503-11e8-81fe-cbf4ce1a229d.png)
+
+This is the ERD at the end of the assignemnt.
+![erd](https://user-images.githubusercontent.com/29603680/39900143-2913fc84-5503-11e8-98f6-85d24844f613.png)
 
 ---
 
 ## Project Plan & Estimation
 
-![](Projectplan)
+![projectplan-min](https://user-images.githubusercontent.com/29603680/39900116-fddd25c2-5502-11e8-9e81-c8c3a6137480.png)
 
 ---
 
 ## Trello
 
+Below is a trelloboard which i have used throughout my assignment in order to keep track with what i have to do and complete.
+![trelloboard-min](https://user-images.githubusercontent.com/29603680/39900168-4935c61e-5503-11e8-8ec2-2fb32ef72326.png)
+
+
 ---
 ## Future Development/Project Improvements
+There are a few future improvements which is in the pipeline to improve the website in future.
+-Integration with Aus Post API for automatic calcuation of postage cost and estimated delivery.
+-Signing Up with social media website such as gmail, facebook(omniauth)
+-A bidding system on sneakers
+-Setting Up a chat bot on the website
+-Setting Up a monthly mailing list for the subscribers.
+-Adding a shopping cart to the application.
+
+## Requirements - RAils Application Code
+1. Create your application using Ruby on Rails.
+   -Yes 
+2. Demonstrate knowledge of Rails conventions.
+   -Yes, was able to produce an application with working MVC model.
+3. Use postgresql database in development.
+   -Yes 
+4. Use an API (e.g. Omniauth, Geocoding, Maps, etc).
+5. Use appropriate gems.
+   carrierwave, fog-aws, dotenv-rails, stripe, mini_magick, jquery-rails, devise, bootstrap.
+6. Use environmental variables to protect API keys etc. (dotenv)
+   -Yes, the dotenv gem was used to protect all my private API keys,
+7. Implement a payment system for your product. (e.g. Stripe)
+   -Stripe was used when client want to buy the product. The value of what stripe charges is based on the how much the procust is worth.
+8. Your app must send transactional emails (eg. using Mailgun).
+   For transactional emails, sendgrid was used. If a user forgets their password they will be able to click the forget my password link and an email will be sent to their personal email.
+9. Your app will have some type of searching, sorting and/or filtering capability.
+   Yes, the search bar functionality was added with the navbar at the top of the website.
+10. Your app will have some type of file uploading capability (eg. images).
+    Carrierwave gem was used for the file uploading capability.
+11. Your app will have authentication (eg. Devise, must have full functionality in place).
+    Yes, installation of Devise gem has full functionality in place.
+12. Your app will have authorisation (users have restrictions on what they can see and edit).
+    Yes, it has authorisation feature to see what they can see and edit. If user is not the seller of the product they will not be able to edit the listings.
+13. Document your application with a README that includes,
+    - Link to your deployed application;
+    - Link to your GitHub repository;
+    - Explains how to setup, configure and use your application.
+    The usage of my application is pretty intuitive in which client is being directed to the landing page which is the same as the listing page. Client is able to sign up and sign in and buy the product through stripe. If client is a buyer client would not be able to edit the listing of the product and if client is the seller client would be able to edit their listing.
+
+## Further Information
+1. All the assets sizes in this README.md file has been resize to be less than 0.75MB.
+
+2. Regular Code Review
+   -I worked with Nick and Alex with the implementation of stripe. We watch an online tutorial sent by Jamie and manage to install stripe in all of our assignment.
+   -I worked with Andreas on AWS and manage to get it implemented to my application.
+   -Code Review with Sam on navbar and some styling to be able to obtain what we wanted to achieve.
+   -I had my code reviewed by Michael, Bianca, Jamie and Marlene which has help with implementation of certain code and function to my applicaiton
