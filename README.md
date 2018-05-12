@@ -321,7 +321,7 @@ There are a few future improvements which is in the pipeline to improve the webs
 - Setting Up a monthly mailing list for the subscribers.
 - Adding a shopping cart to the application.
 
-## Requirements - RAils Application Code
+## Requirements - Rails Application Code
 1. Create your application using Ruby on Rails.
    - Yes 
 2. Demonstrate knowledge of Rails conventions.
